@@ -10,13 +10,13 @@ Networking Tables is a smart event app that enhances networking. It efficiently 
 
 ## Installation
 
-### Python Version
+#### Python Version
 
 ```bash
 make setup-python
 ```
 
-### Go Version
+#### Go Version
 
 ```bash
 make setup-go
@@ -26,9 +26,9 @@ make setup-go
 
 You will be prompted to enter the names of the people (separated by spaces), the capacity of each table (as a series of numbers separated by spaces), and the number of combinations to compute.
 
-**Note:** *The go version runs much faster than the python version.*
+**Note:** *The Go version runs much faster than the Python version.*
 
-### Example
+#### Example
 
 ```bash
 Enter the names of the people (separated by spaces): Alice Bob Charlie David Eve
@@ -39,13 +39,13 @@ Enter the number of combinations to compute: 10000
 
 ```
 
-### Python Version
+#### Python Version
 
 ```bash
 make run-python
 ```
 
-### Go Version
+#### Go Version
   
 ```bash
 make run-go
