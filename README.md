@@ -53,9 +53,14 @@ make run-go
 
 ## Tests
 
-There is a sanity E2E test under the tests folder. To run it, use the command:
+There is a sanity E2E tests. The tests are run with the following commands:
+
 ```bash
 make test-python
+```
+
+```bash
+make test-go
 ```
 
 ## Contribute
