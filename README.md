@@ -28,7 +28,7 @@ You will be prompted to enter the names of the people (separated by spaces), the
 
 **Note:** *The Go version runs much faster than the Python version.*
 
-#### Example
+**Example:**
 
 ```bash
 Enter the names of the people (separated by spaces): Alice Bob Charlie David Eve
