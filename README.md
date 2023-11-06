@@ -22,10 +22,11 @@ make setup-python
 make setup-go
 ```
 
-
 ## Usage
 
 You will be prompted to enter the names of the people (separated by spaces), the capacity of each table (as a series of numbers separated by spaces), and the number of combinations to compute.
+
+*Note* The go version runs much faster than the python version.
 
 ### Example
 
