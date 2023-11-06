@@ -3,35 +3,33 @@
 package main
 
 import (
+	"bytes"
+	"strings"
 	"testing"
 )
 
-// func TestMainFlow(t *testing.T) {
-// 	// Simulate user input
-// 	input := bytes.NewBufferString("Alice Bob Charlie\n2 1\n3\n")
-// 	peopleArr, tablesCapacity, combinationsLength, iterations := getUserInput(input)
+func TestMainFlow(t *testing.T) {
+	// Simulate user input
+	input := bytes.NewBufferString("Alice Bob Charlie\n2 1\n3\n")
+	peopleArr, tablesCapacity, combinationsLength := getUserInput(input)
 
-// 	// Check the returned values
-// 	if !strings.EqualFold(strings.Join(peopleArr, " "), "Alice Bob Charlie") {
-// 		t.Errorf("Expected peopleArr to be 'Alice Bob Charlie', got '%v'", strings.Join(peopleArr, " "))
-// 	}
+	// Check the returned values
+	if !strings.EqualFold(strings.Join(peopleArr, " "), "Alice Bob Charlie") {
+		t.Errorf("Expected peopleArr to be 'Alice Bob Charlie', got '%v'", strings.Join(peopleArr, " "))
+	}
 
-// 	if !equal(tablesCapacity, []int{2, 1}) {
-// 		t.Errorf("Expected tablesCapacity to be [2 1], got '%v'", tablesCapacity)
-// 	}
+	if !equal(tablesCapacity, []int{2, 1}) {
+		t.Errorf("Expected tablesCapacity to be [2 1], got '%v'", tablesCapacity)
+	}
 
-// 	if combinationsLength != 3 {
-// 		t.Errorf("Expected combinationsLength to be 3, got '%v'", combinationsLength)
-// 	}
+	if combinationsLength != 3 {
+		t.Errorf("Expected combinationsLength to be 3, got '%v'", combinationsLength)
+	}
 
-// 	if iterations != 2 {
-// 		t.Errorf("Expected iterations to be 2, got '%v'", iterations)
-// 	}
-
-// 	// Run the algorithm
-// 	peopleScores := initPeopleScores(peopleArr)
-// 	runningAlgo(iterations, combinationsLength, peopleArr, peopleScores, tablesCapacity)
-// }
+	// Run the algorithm
+	peopleScores := initPeopleScores(peopleArr)
+	run(combinationsLength, peopleArr, peopleScores, tablesCapacity)
+}
 
 func TestIntegration(t *testing.T) {
 	// Generate peopleArr dynamically
@@ -48,7 +46,7 @@ func TestIntegration(t *testing.T) {
 	peopleScores := initPeopleScores(peopleArr)
 
 	// Run the algorithm
-	runningAlgo(combinationsLength, peopleArr, peopleScores, tablesCapacity)
+	run(combinationsLength, peopleArr, peopleScores, tablesCapacity)
 }
 
 func equal(a, b []int) bool {

@@ -24,7 +24,7 @@ func main() {
 	peopleScores := initPeopleScores(peopleArr)
 
 	// Running the algorithm
-	runningAlgo(
+	run(
 		combinationsLength,
 		peopleArr,
 		peopleScores,
@@ -148,7 +148,7 @@ func deepCopy(m map[string]map[string]int) map[string]map[string]int {
 	return copy
 }
 
-func runningAlgo(
+func run(
 	combinationsLength int,
 	peopleArr []string,
 	peopleScores map[string]map[string]int,

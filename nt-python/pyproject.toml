@@ -13,6 +13,10 @@ tqdm = "^4.66.1"
 
 [tool.poetry.group.dev.dependencies]
 pytest = "^7.4.3"
+pylint = "^3.0.2"
+
+[tool.pylint.'MESSAGES CONTROL']
+extension-pkg-whitelist = "pydantic"
 
 [build-system]
 requires = ["poetry-core"]

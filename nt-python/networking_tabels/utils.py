@@ -5,15 +5,14 @@ import random
 from tqdm import tqdm
 
 
-# Getting user input
 def get_user_input():
     people_arr: list[str] = input("Enter the names of the people: ").split()
 
     tables_capacity: list[int] = list(
-        map(int, input("Enter the capacity of the tables: "))
+        map(int, input("Enter the capacity of the each table (for example 4 5 5 6): "))
     )
 
-    combinations_length = int(input("Enter the number of brute force combinations"))
+    combinations_length = int(input("Enter the number of combinations to compute: "))
 
     return people_arr, tables_capacity, combinations_length
 
@@ -81,7 +80,7 @@ def best_combination(
     return _best_combination
 
 
-def running_algo(combinations_length, people_arr, people_scores, tables_capacity):
+def run(combinations_length, people_arr, people_scores, tables_capacity):
     """Runs the algorithm"""
 
     iterations = len(tables_capacity)
