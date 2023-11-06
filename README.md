@@ -53,7 +53,7 @@ make run-go
 
 ## Tests
 
-There is a sanity E2E tests. The tests are run with the following commands:
+There are sanity E2E tests. The tests are run with the following commands:
 
 ```bash
 make test-python
