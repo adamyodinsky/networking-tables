@@ -1,0 +1,23 @@
+[tool.poetry]
+name = "networking-tabels"
+version = "0.1.0"
+description = ""
+authors = ["Adam Yodinsky <27074934+adamyodinsky@users.noreply.github.com>"]
+readme = "README.md"
+packages = [{ include = "networking_tabels" }]
+
+[tool.poetry.dependencies]
+python = "^3.10"
+tqdm = "^4.66.1"
+
+
+[tool.poetry.group.dev.dependencies]
+pytest = "^7.4.3"
+pylint = "^3.0.2"
+
+[tool.pylint.'MESSAGES CONTROL']
+extension-pkg-whitelist = "pydantic"
+
+[build-system]
+requires = ["poetry-core"]
+build-backend = "poetry.core.masonry.api"
