@@ -55,10 +55,14 @@ make run-go
 
 There are sanity E2E tests. The tests are run with the following commands:
 
+#### Python Version
+
 ```bash
 make test-python
 ```
 
+#### Go Version
+  
 ```bash
 make test-go
 ```
