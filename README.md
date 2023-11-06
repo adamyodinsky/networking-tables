@@ -2,6 +2,12 @@
 
 Networking Tables is a smart event app that enhances networking. It efficiently shuffles seating arrangements, ensuring everyone meets with minimal table switches, fostering a dynamic and engaging experience.
 
+## Dependencies
+
+- Python 3.7+
+- Poetry (python package manager)
+- Go 1.13+
+
 ## Installation
 
 ### Python Version
