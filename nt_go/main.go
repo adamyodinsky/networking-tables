@@ -96,6 +96,10 @@ func bestCombination(
 			tableScore := 0
 
 			for j := 0; j < tableLength; j++ {
+				if len(peopleArrCopy) == 0 {
+					break
+				}
+
 				index := rand.Intn(len(peopleArrCopy))
 				table = append(table, peopleArrCopy[index])
 				peopleArrCopy = append(peopleArrCopy[:index], peopleArrCopy[index+1:]...)

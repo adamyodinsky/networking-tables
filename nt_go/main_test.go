@@ -39,7 +39,7 @@ func TestIntegration(t *testing.T) {
 	}
 
 	// Hard-code tablesCapacity and combinationsLength values
-	tablesCapacity := []int{4, 4, 4, 4, 4, 3, 3}
+	tablesCapacity := []int{4, 4, 4, 4, 4, 3, 7}
 	combinationsLength := 10000
 
 	// Initialize peopleScores

@@ -49,6 +49,9 @@ def best_combination(
             table_score = 0
 
             for i in range(table_length):
+                if len(people_arr_copy) == 0:
+                    break
+
                 table.append(
                     people_arr_copy.pop(random.randint(0, len(people_arr_copy) - 1))
                 )

@@ -13,7 +13,7 @@ def test_integration():
         4,
         4,
         3,
-        3,
+        7,
     ]  # this will be replaced by dynamically entered by the user
     combinations_length = 10000  # will dynamically entered by the user
 

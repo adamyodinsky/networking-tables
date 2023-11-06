@@ -1,17 +1,10 @@
 # Networking Tables
+
 Networking Tables is a smart event app that enhances networking. It efficiently shuffles seating arrangements, ensuring everyone meets with minimal table switches, fostering a dynamic and engaging experience.
-
-Copy code
-
-# Networking Tables
-
-Networking Tables is a smart event app designed to optimize social interactions at gatherings. It efficiently shuffles seating arrangements, ensuring everyone meets with minimal table switches, fostering a dynamic and engaging experience.
 
 ## Installation
 
 ### Python Version
-
-Navigate to the `nt-python` directory and install the dependencies using Poetry:
 
 ```bash
 make setup-python
@@ -26,11 +19,30 @@ make setup-go
 
 ## Usage
 
+You will be prompted to enter the names of the people (separated by spaces), the capacity of each table (as a series of numbers separated by spaces), and the number of combinations to compute.
+
+### Example
+
+```bash
+Enter the names of the people (separated by spaces): Alice Bob Charlie David Eve
+
+Enter the capacity of each table (as a series of numbers separated by spaces): 2 3 4 5
+
+Enter the number of combinations to compute: 10000
+
+```
+
+### Python Version
+
 ```bash
 make run-python
 ```
 
-You will be prompted to enter the names of the people (separated by spaces), the capacity of each table (as a series of numbers separated by spaces), and the number of combinations to compute.
+### Go Version
+  
+```bash
+make run-go
+```
 
 ## Tests
 
@@ -39,15 +51,6 @@ There is a sanity E2E test under the tests folder. To run it, use the command:
 make test-python
 ```
 
+## Contribute
 
-Contribute
 Contributions are welcome! Please fork the repository and create a pull request with your changes.
-
-License
-This project is licensed under the terms of the MIT license.
-
-Copy code
-
-
-This README provides a comprehensive overview of the project. However, the specific commands and directories mentioned (such as `requirements.txt` and `tests`) should be adjusted to match your actual project structure and setup.
-
