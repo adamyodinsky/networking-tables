@@ -1,16 +1,19 @@
 setup-python:
-	cd nt-python && poetry install
+	cd nt_python && poetry install
 
 setup-go:
-	cd nt-go && go install
+	cd nt_go && go install
 
 setup-all: setup-python setup-go
 
 run-python:
-	cd nt-python && poetry run python networking_tabels/main.py
+	cd nt_python && poetry run python networking_tabels/main.py
 
 run-go:
-	cd nt-go && go run main.go
+	cd nt_go && go run main.go
 
 test-go:
-	cd nt-go && go test
+	cd nt_go && go test
+
+test-python:
+	cd nt_python && poetry run python tests/test_e2e.py

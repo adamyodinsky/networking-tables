@@ -39,11 +39,11 @@ func getUserInput(reader io.Reader) ([]string, []int, int) {
 	scanner.Scan()
 	peopleArr := strings.Split(scanner.Text(), " ")
 
-	fmt.Println("Enter the capacity of the tables: ")
+	fmt.Println("Enter the capacity of each table: ")
 	scanner.Scan()
 	tablesCapacity := splitToInt(scanner.Text(), " ")
 
-	fmt.Println("Enter the number of brute force combinations: ")
+	fmt.Println("Enter the number of combinations to try: ")
 	scanner.Scan()
 	combinationsLength, _ := strconv.Atoi(scanner.Text())
 
