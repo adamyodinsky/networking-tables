@@ -70,3 +70,7 @@ make test-go
 ## Contribute
 
 Contributions are welcome! Please fork the repository and create a pull request with your changes.
+
+## Future Plans
+
+- Mobile app with a backend server
